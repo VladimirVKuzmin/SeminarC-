@@ -21,6 +21,6 @@ int ThirdDigit(int number)
             number = number / 10;
         }
             result = number % 10;
-        }
-        return result; 
     }
+    return result; 
+}
