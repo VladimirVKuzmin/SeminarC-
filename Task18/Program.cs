@@ -3,6 +3,7 @@
 
 int number1 = new Random().Next(1, 5);
 Console.WriteLine(number1);
+
 if (number1 == 1)
 {
     Console.WriteLine("x:= (0; +бесконечность)   y:=(0; +бесконечность)");
