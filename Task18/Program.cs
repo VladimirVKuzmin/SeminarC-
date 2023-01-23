@@ -19,7 +19,7 @@ else if (number1 == 4)
 {
     Console.WriteLine("x:= (0; +бесконечность)   y:=(0; -бесконечность)");
 }
-else if ((number1 <= 0) || (number1 >= 4))
+else 
 {
     Console.WriteLine("Такой четверти нет");
 }
