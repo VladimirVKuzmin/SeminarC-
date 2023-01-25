@@ -13,7 +13,7 @@ while (number > 0)
     number = number / 10;
     sum = sum * 10 + remind;
 }
-    if (temp == sum)
+if (temp == sum)
    {
       Console.WriteLine("Число являеется палиндромом");
    }
