@@ -1,26 +1,37 @@
 ﻿// Вывести третью цифру заданного числа или сообщить, что третьей цифры нет.
 
-Console.WriteLine("Введите число: ");
-int number1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число: ");
+// int number1 = Convert.ToInt32(Console.ReadLine());
 
-if (ThirdDigit(number1) == -1)
+// if (ThirdDigit(number1) == -1)
+// {
+//     Console.WriteLine("третьей цифры нет");
+// }
+// else
+// {
+//     Console.WriteLine($"Третья цифра {ThirdDigit(number1)}");
+// }
+// int ThirdDigit(int number)
+// {
+//     int result = -1;
+//     if (number >= 100)
+//     {
+//         while (number > 999)
+//         {
+//             number = number / 10;
+//         }
+//             result = number % 10;
+//     }
+//     return result; 
+// }
+
+
+// второй вариант
+Console.WriteLine("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+while(num >= 1000)
 {
-    Console.WriteLine("третьей цифры нет");
+    num /=10;
 }
-else
-{
-    Console.WriteLine($"Третья цифра {ThirdDigit(number1)}");
-}
-int ThirdDigit(int number)
-{
-    int result = -1;
-    if (number >= 100)
-    {
-        while (number > 999)
-        {
-            number = number / 10;
-        }
-            result = number % 10;
-    }
-    return result; 
-}
+System.Console.WriteLine(num %10);
