@@ -3,7 +3,7 @@
 // 6, 1, 33 -> [6, 1, 33]
 
 int N = 8;
-int[] SetArray(int x)
+int[] FillArray(int x)
 {
     int[] arr = new int[x];
     for (int i = 0; i < x; i++)
@@ -20,4 +20,4 @@ void PrintArray(int[] array)
     }
 }
 
-PrintArray(SetArray(N));
+PrintArray(FillArray(N));
