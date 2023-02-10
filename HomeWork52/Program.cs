@@ -49,7 +49,7 @@ int[,] GetArray(int m, int n, int minValue, int maxValue)
 
 void PrintArray(int[,] arr)
 {
-        for (int i = 0; i < arr.GetLength(0); i++)
+    for (int i = 0; i < arr.GetLength(0); i++)
     {
         for (int j = 0; j < arr.GetLength(1); j++)
         {
